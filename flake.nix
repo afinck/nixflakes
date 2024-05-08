@@ -38,7 +38,9 @@
 						hostname = "mars";
 						inherit system;
 					} // attrs;
-					modules = [ ./. ];
+					modules = [ ./.
+                        ./hyprland/desktop                    
+                     ];
 			 	}; 	
 		};		
 				devShells = forAllSystems (system:

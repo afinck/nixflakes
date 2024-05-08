@@ -1,3 +1,3 @@
 {
-	imports = [ ./core ./ssh ];
+	imports = [ ./core ./ssh ./hyprland ];
 }
