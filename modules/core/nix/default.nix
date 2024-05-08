@@ -1,6 +1,10 @@
 { home-manager, pkgs, username, ... }: {
-
-	system.stateVersion = "24.05";
+	system = {
+		extraSystemBuilderCmds = ''
+			ln -sv ${pkgs.path} $out/nixpkgs
+		'';
+		stateVersion = "24.05";
+	};
 
 	# Enabel flakes and nix-commands, enable removing channels
 	nix = {
@@ -26,5 +30,5 @@
 	services.gvfs.enable = true;
 	services.udisks2.enable = true;
 
-	networking.hostName = "mars";
+	networking.hostName = ${hostname};
 }
