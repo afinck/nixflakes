@@ -36,7 +36,7 @@
 					specialArgs = {
 						username = "andreas";
 						hostname = "mars";
-						hyprlandConfig = "laptop";
+						hyprlandConfig = "desktop";
 						inherit system;
 					} // attrs;
 					modules = [ ./. ];
