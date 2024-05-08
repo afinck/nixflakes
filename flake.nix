@@ -39,9 +39,7 @@
 						hyprlandConfig = "desktop";
 						inherit system;
 					} // attrs;
-					modules = [ 
-						./.
-          ];
+					modules = [ ./. ];
 			 	}; 	
 		};		
 				devShells = forAllSystems (system:
