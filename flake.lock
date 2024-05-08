@@ -23,15 +23,15 @@
     "hyprcursor": {
       "inputs": {
         "hyprlang": [
-          "hyrland",
+          "hyprland",
           "hyprlang"
         ],
         "nixpkgs": [
-          "hyrland",
+          "hyprland",
           "nixpkgs"
         ],
         "systems": [
-          "hyrland",
+          "hyprland",
           "systems"
         ]
       },
@@ -49,15 +49,38 @@
         "type": "github"
       }
     },
+    "hyprland": {
+      "inputs": {
+        "hyprcursor": "hyprcursor",
+        "hyprlang": "hyprlang",
+        "hyprwayland-scanner": "hyprwayland-scanner",
+        "nixpkgs": "nixpkgs",
+        "systems": "systems",
+        "xdph": "xdph"
+      },
+      "locked": {
+        "lastModified": 1715178242,
+        "narHash": "sha256-xfRuK522ESDdg0aVG67SAh/vRdv2JIM+vUfvRMPu0XQ=",
+        "owner": "hyprwm",
+        "repo": "hyprland",
+        "rev": "d1ad490cdaaa97d5df83d28e86f02c96107ba142",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hyprwm",
+        "repo": "hyprland",
+        "type": "github"
+      }
+    },
     "hyprland-protocols": {
       "inputs": {
         "nixpkgs": [
-          "hyrland",
+          "hyprland",
           "xdph",
           "nixpkgs"
         ],
         "systems": [
-          "hyrland",
+          "hyprland",
           "xdph",
           "systems"
         ]
@@ -79,10 +102,13 @@
     "hyprlang": {
       "inputs": {
         "nixpkgs": [
-          "hyprlock",
+          "hyprland",
           "nixpkgs"
         ],
-        "systems": "systems"
+        "systems": [
+          "hyprland",
+          "systems"
+        ]
       },
       "locked": {
         "lastModified": 1713121246,
@@ -101,13 +127,10 @@
     "hyprlang_2": {
       "inputs": {
         "nixpkgs": [
-          "hyrland",
+          "hyprlock",
           "nixpkgs"
         ],
-        "systems": [
-          "hyrland",
-          "systems"
-        ]
+        "systems": "systems_2"
       },
       "locked": {
         "lastModified": 1713121246,
@@ -125,11 +148,11 @@
     },
     "hyprlock": {
       "inputs": {
-        "hyprlang": "hyprlang",
+        "hyprlang": "hyprlang_2",
         "nixpkgs": [
           "nixpkgs"
         ],
-        "systems": "systems_2"
+        "systems": "systems_3"
       },
       "locked": {
         "lastModified": 1714843107,
@@ -168,11 +191,11 @@
     "hyprwayland-scanner": {
       "inputs": {
         "nixpkgs": [
-          "hyrland",
+          "hyprland",
           "nixpkgs"
         ],
         "systems": [
-          "hyrland",
+          "hyprland",
           "systems"
         ]
       },
@@ -187,29 +210,6 @@
       "original": {
         "owner": "hyprwm",
         "repo": "hyprwayland-scanner",
-        "type": "github"
-      }
-    },
-    "hyrland": {
-      "inputs": {
-        "hyprcursor": "hyprcursor",
-        "hyprlang": "hyprlang_2",
-        "hyprwayland-scanner": "hyprwayland-scanner",
-        "nixpkgs": "nixpkgs",
-        "systems": "systems_3",
-        "xdph": "xdph"
-      },
-      "locked": {
-        "lastModified": 1715112206,
-        "narHash": "sha256-Xm5DqGqxpZwkI+s7eAf5aD6Yeb2qvolGfo5aiKoBeuc=",
-        "owner": "hyprwm",
-        "repo": "hyprland",
-        "rev": "601210878dc5d05f195753dccf0cafa3187c6ad6",
-        "type": "github"
-      },
-      "original": {
-        "owner": "hyprwm",
-        "repo": "hyprland",
         "type": "github"
       }
     },
@@ -248,9 +248,9 @@
     "root": {
       "inputs": {
         "home-manager": "home-manager",
+        "hyprland": "hyprland",
         "hyprlock": "hyprlock",
         "hyprpicker": "hyprpicker",
-        "hyrland": "hyrland",
         "nixpkgs": "nixpkgs_2"
       }
     },
@@ -303,15 +303,15 @@
       "inputs": {
         "hyprland-protocols": "hyprland-protocols",
         "hyprlang": [
-          "hyrland",
+          "hyprland",
           "hyprlang"
         ],
         "nixpkgs": [
-          "hyrland",
+          "hyprland",
           "nixpkgs"
         ],
         "systems": [
-          "hyrland",
+          "hyprland",
           "systems"
         ]
       },

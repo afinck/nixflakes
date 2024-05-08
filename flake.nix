@@ -9,7 +9,7 @@
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
 
-		hyrland = { url = "github:hyprwm/hyprland"; };
+		hyprland = { url = "github:hyprwm/hyprland"; };
 
 		hyprlock = {
 			url = "github:hyprwm/hyprlock";
