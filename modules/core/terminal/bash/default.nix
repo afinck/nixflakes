@@ -18,6 +18,7 @@
 				e =						"exit";
 				d = 					"cd ~/Dokumente";
 				D = 					"cd ~/Downloads";
+				gs =					"git status";
 				ga = 					"git add";
 				gc = 					"git commit -m";
 				gf = 					"git fetch";

@@ -31,7 +31,7 @@
 
 			nixosConfigurations = {
 
-				nixos = let system = "x86_64-linux";
+				mars = let system = "x86_64-linux";
 				in nixpkgs.lib.nixosSystem {
 					specialArgs = {
 						username = "andreas";
