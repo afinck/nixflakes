@@ -36,11 +36,12 @@
 					specialArgs = {
 						username = "andreas";
 						hostname = "mars";
+						hyprlandConfig = "desktop";
 						inherit system;
 					} // attrs;
-					modules = [ ./.
-                        ./hyprland/desktop                    
-                     ];
+					modules = [ 
+						./.
+          ];
 			 	}; 	
 		};		
 				devShells = forAllSystems (system:
